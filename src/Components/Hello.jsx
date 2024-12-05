@@ -1,10 +1,20 @@
+import Header  from "./Header";
 import Description from "./Description";
 const Hello = () =>{
+  
+  const getData = (data)=>{
+    console.log(data);
+    
+  }
   return (
+  
     <>
-    <h1>Hello World!</h1>
-      <h2>Goodbye World!</h2>
-      <Description />
+    
+    <Header
+    getData={getData} />
+     <Description />
+
+      
     </>
   )
 }
